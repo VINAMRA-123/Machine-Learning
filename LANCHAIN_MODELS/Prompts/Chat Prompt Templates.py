@@ -26,3 +26,16 @@ llm = ChatGoogleGenerativeAI(
 )
 response = llm.invoke(messages)
 print(response.content)
+
+"""📋 Understanding Message Roles:
+
+    • "system": Sets the AI's behavior, personality, or constraints. Like giving instructions to an assistant
+    • "human": The user's input or question
+    • "assistant": The AI's previous responses (used for conversation history)
+
+✨ Benefits of ChatPromptTemplate:
+
+    • Automatically formats messages in the correct structure for chat models
+    • Supports dynamic variables in any message type
+    • Makes it easy to build conversational applications
+    • Maintains consistency across different chat model providers"""
